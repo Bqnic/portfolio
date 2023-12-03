@@ -3,6 +3,7 @@
   --text-color: #a1a1aa;
   --primary-color: #9ca3af;
   --highlight: #d6d3d1;
+  --highlight2: #ef4444;
 }
 
 * {
@@ -52,4 +53,49 @@ body {
   width: 85px;
   border-top: 1px solid var(--primary-color);
   transition: 0.8s;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 4px;
+  color: var(--highlight);
+  font-size: 1.8rem;
+  margin: 10px 45px;
+}
+.introduction div:nth-child(1) p:nth-child(1) {
+  font-size: 1.2rem;
+}
+.introduction div:nth-child(1),
+.introduction div:nth-child(2) {
+  margin-bottom: 10px;
+}
+.introduction div:nth-child(1) a {
+  color: var(--highlight2);
+}
+.introduction div:nth-child(2) p:nth-child(1) {
+  font-size: 1.4rem;
+}
+.introduction .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  color: var(--highlight);
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 12px;
+  width: 150px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.introduction .btn:hover {
+  background-color: var(--highlight2);
+  width: 170px;
+  transition: 0.5s;
 }
