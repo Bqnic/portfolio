@@ -4,6 +4,7 @@
   --primary-color: #9ca3af;
   --highlight: #d6d3d1;
   --highlight2: #ef4444;
+  --bg-color2: #a8a29e;
 }
 
 * {
@@ -31,10 +32,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
   gap: 20px;
   padding: 20px;
+  margin-bottom: 10px;
 }
-.navigation button {
+.navigation .nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +53,7 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
-.navigation button:hover {
+.navigation .nav-btn:hover {
   width: 85px;
   border-top: 1px solid var(--primary-color);
   transition: 0.8s;
@@ -98,4 +102,50 @@ body {
   background-color: var(--highlight2);
   width: 170px;
   transition: 0.5s;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 45px;
+  font-size: 1.1rem;
+  gap: 6px;
+}
+.about a {
+  color: var(--highlight2);
+}
+.about img {
+  height: 50px;
+  width: 50px;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  font-size: 2rem;
+  color: var(--highlight);
+  border-radius: 10px;
+  border-bottom: 2px solid var(--highlight);
+  border-top: 2px solid var(--highlight);
+  margin-bottom: 20px;
+}
+
+.skills {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  align-self: center;
+}
+.skills div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
