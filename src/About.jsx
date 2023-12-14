@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="about">
-      <div className="section">ABOUT</div>
+      <div className="section">About</div>
       <p>
         I am a <a>20</a> year old CS student from <a>Croatia</a>.
       </p>

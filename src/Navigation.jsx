@@ -9,7 +9,7 @@ export default function Navigation() {
       <Link className="nav-btn" to="about" spy={true} smooth={true}>
         About
       </Link>
-      <Link className="nav-btn" to="/" spy={true} smooth={true}>
+      <Link className="nav-btn" to="projects" spy={true} smooth={true}>
         Projects
       </Link>
       <Link className="nav-btn" to="/" spy={true} smooth={true}>

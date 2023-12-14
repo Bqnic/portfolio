@@ -28,6 +28,11 @@ body {
   color: var(--text-color);
 }
 
+.about,
+.projects {
+  margin: 0px 45px;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -109,11 +114,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0px 45px;
+  margin-bottom: 50px;
   font-size: 1.1rem;
   gap: 6px;
 }
-.about a {
+.about a,
+.projects a {
   color: var(--highlight2);
 }
 .about img {
@@ -148,4 +154,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
