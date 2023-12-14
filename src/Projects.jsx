@@ -19,8 +19,23 @@ export default function Projects() {
           In my first year of university I started working on some bigger
           <a> projects</a>, such as:
         </p>
+        <div className="project-slider"></div>
+        <div className="slider">
+          <div className={projects >= 1 ? "active" : null}></div>
+          <div className={projects >= 2 ? "active" : null}></div>
+          <div className={projects >= 3 ? "active" : null}></div>
+          <div className={projects >= 4 ? "active" : null}></div>
+          <div className={projects == 5 ? "active" : null}></div>
+        </div>
+        <div className="btns">
+          <button onClick={() => setProjects(projects == 0 ? 5 : projects - 1)}>
+            &lt;-
+          </button>
+          <button onClick={() => setProjects(projects == 5 ? 0 : projects + 1)}>
+            -&gt;
+          </button>
+        </div>
       </div>
-      <div className="project-slider"></div>
     </>
   );
 }

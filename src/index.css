@@ -5,6 +5,7 @@
   --highlight: #d6d3d1;
   --highlight2: #ef4444;
   --bg-color2: #a8a29e;
+  --bg-color3: #ccfbf1;
 }
 
 * {
@@ -42,6 +43,7 @@ body {
   gap: 20px;
   padding: 20px;
   margin-bottom: 10px;
+  background-color: var(--bg-color);
 }
 .navigation .nav-btn {
   display: flex;
@@ -49,7 +51,7 @@ body {
   align-items: center;
   padding: 4px;
   border: none;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--bg-color3);
   border-top: 1px solid var(--bg-color);
   background: none;
   color: var(--text-color);
@@ -60,7 +62,7 @@ body {
 }
 .navigation .nav-btn:hover {
   width: 85px;
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--bg-color3);
   transition: 0.8s;
 }
 
@@ -155,8 +157,56 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+.project-slider {
+  margin-top: 10px;
+  border: 1px solid var(--bg-color3);
+  height: 40vh;
+}
+.projects .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .btns button {
+  width: 80px;
+  background: none;
+  border: 1px solid var(--bg-color3);
+  border-radius: 12px;
+  color: var(--highlight);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.projects .btns button:hover {
+  background-color: var(--highlight2);
+  border: 1px solid var(--highlight2);
+  width: 90px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.projects .slider {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 20px;
+  width: 50vw;
+  align-self: center;
+  border: 1px solid var(--bg-color3);
+}
+.projects .slider div {
+  background-color: var(--bg-color);
+  transition: 0.5s;
+}
+.projects .slider div:last-child {
+  border: none;
+}
+.projects .slider .active {
+  background-color: green;
+  transition: 0.5s;
 }
