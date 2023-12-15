@@ -198,15 +198,22 @@ body {
   width: 50vw;
   align-self: center;
   border: 1px solid var(--bg-color3);
+  border-radius: 20px;
 }
 .projects .slider div {
   background-color: var(--bg-color);
   transition: 0.5s;
 }
+.projects .slider div:first-child {
+  border-radius: 20px 0px 0px 20px;
+}
+.projects .slider div:last-child {
+  border-radius: 0px 20px 20px 0px;
+}
 .projects .slider div:last-child {
   border: none;
 }
 .projects .slider .active {
-  background-color: green;
+  background-color: var(--highlight2);
   transition: 0.5s;
 }
