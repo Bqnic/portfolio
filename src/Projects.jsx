@@ -2,6 +2,13 @@ import { useState } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState(0);
+  const projectDivs = [];
+  const numOfProjects = 5;
+
+  for (let i = 1; i <= numOfProjects; i++) {
+    projectDivs.push(<div className={projects >= i ? "active" : null}></div>);
+  }
+
   return (
     <>
       <div className="projects">
@@ -20,18 +27,25 @@ export default function Projects() {
           <a> projects</a>, such as:
         </p>
         <div className="project-slider"></div>
-        <div className="slider">
-          <div className={projects >= 1 ? "active" : null}></div>
-          <div className={projects >= 2 ? "active" : null}></div>
-          <div className={projects >= 3 ? "active" : null}></div>
-          <div className={projects >= 4 ? "active" : null}></div>
-          <div className={projects == 5 ? "active" : null}></div>
+        <div
+          className="slider"
+          style={{ gridTemplateColumns: `repeat(${numOfProjects}, 1fr` }}
+        >
+          {projectDivs}
         </div>
         <div className="btns">
-          <button onClick={() => setProjects(projects == 0 ? 5 : projects - 1)}>
+          <button
+            onClick={() =>
+              setProjects(projects == 0 ? numOfProjects : projects - 1)
+            }
+          >
             &lt;-
           </button>
-          <button onClick={() => setProjects(projects == 5 ? 0 : projects + 1)}>
+          <button
+            onClick={() =>
+              setProjects(projects == numOfProjects ? 0 : projects + 1)
+            }
+          >
             -&gt;
           </button>
         </div>

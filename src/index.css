@@ -210,9 +210,6 @@ body {
 .projects .slider div:last-child {
   border-radius: 0px 20px 20px 0px;
 }
-.projects .slider div:last-child {
-  border: none;
-}
 .projects .slider .active {
   background-color: var(--highlight2);
   transition: 0.5s;
