@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { projectArray } from "./assets/projects-helper";
 
 export default function Projects() {
   const [projects, setProjects] = useState(0);
@@ -26,7 +27,7 @@ export default function Projects() {
           In my first year of university I started working on some bigger
           <a> projects</a>, such as:
         </p>
-        <div className="project-slider"></div>
+        <div className="project-slider">{projectArray[projects]}</div>
         <div
           className="slider"
           style={{ gridTemplateColumns: `repeat(${numOfProjects}, 1fr` }}

@@ -162,12 +162,35 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   font-size: 1.1rem;
 }
 .project-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
-  border: 1px solid var(--bg-color3);
-  height: 40vh;
+  height: 60vh;
+  width: 100%;
+}
+.project-slider div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.project-slider div p:first-child {
+  font-size: 1.5rem;
+  color: var(--highlight);
+}
+.project-slider div a {
+  color: var(--bg-color3);
+}
+.project-slider img {
+  width: 350px;
+  border: 1px solid var(--highlight);
 }
 .projects .btns {
   display: flex;
