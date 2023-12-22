@@ -38,6 +38,10 @@ export default function About() {
           <img src="../icons8-java.svg" alt="JAVA" />
           <p>Java</p>
         </div>
+        <div>
+          <img src="../icons8-git.svg" alt="GIT" />
+          <p>Git</p>
+        </div>
       </div>
     </div>
   );

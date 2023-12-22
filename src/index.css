@@ -30,8 +30,9 @@ body {
 }
 
 .about,
-.projects {
-  margin: 0px 45px;
+.projects,
+.contact {
+  margin: 80px 45px;
 }
 
 .navigation {
@@ -90,7 +91,8 @@ body {
 .introduction div:nth-child(2) p:nth-child(1) {
   font-size: 1.4rem;
 }
-.introduction .btn {
+.introduction .btn,
+.footer .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,13 +112,18 @@ body {
   width: 170px;
   transition: 0.5s;
 }
+.footer .btn:hover {
+  background-color: var(--bg-color3);
+  width: 170px;
+  transition: 0.5s;
+  color: black;
+}
 
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 50px;
   font-size: 1.1rem;
   gap: 6px;
 }
@@ -132,7 +139,7 @@ body {
 .section {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   font-size: 2rem;
@@ -162,7 +169,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   font-size: 1.1rem;
 }
 .project-slider {
@@ -182,7 +188,7 @@ body {
   gap: 10px;
 }
 .project-slider div p:first-child {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--highlight);
 }
 .project-slider div a {
@@ -236,4 +242,42 @@ body {
 .projects .slider .active {
   background-color: var(--highlight2);
   transition: 0.5s;
+}
+.contact a {
+  color: var(--highlight2);
+}
+.contact img {
+  height: 70px;
+  width: 70px;
+}
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-info div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--highlight);
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--highlight);
+}
+.footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-color3);
+  gap: 20px;
+  padding: 30px 0px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
 }
