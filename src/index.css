@@ -79,7 +79,7 @@ body {
   margin: 10px 45px;
 }
 .introduction div:nth-child(1) p:nth-child(1) {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .introduction div:nth-child(1),
 .introduction div:nth-child(2) {
@@ -89,7 +89,7 @@ body {
   color: var(--highlight2);
 }
 .introduction div:nth-child(2) p:nth-child(1) {
-  font-size: 1.4rem;
+  font-size: 1.15rem;
 }
 .introduction .btn,
 .footer .btn {
@@ -185,7 +185,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  height: 60vh;
+  height: 75vh;
   width: 100%;
 }
 .project-slider div {
@@ -280,11 +280,11 @@ body {
   transition: 0.8s;
 }
 .contact-info a p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   transition: 0.8s;
 }
 .contact-info a p:hover {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   transition: 0.8s;
 }
 .footer {
