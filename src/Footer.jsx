@@ -6,7 +6,7 @@ export default function Footer() {
         Go back to top
       </Link>
       <a href="https://github.com/Bqnic" target="_blank">
-        Made by Stjepan Bonić (Bqnic) | GitHub
+        Made by Stjepan Bonić (Bqnic) | <img src="icons8-github.svg" alt="" />
       </a>
     </div>
   );

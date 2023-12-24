@@ -14,6 +14,18 @@ const knightTraversal = (
     <p>
       Made with: <a>HTML, CSS, JavaScript</a>.
     </p>
+    <p>
+      Try it out:{" "}
+      <a href="https://bqnic.github.io/knight-traversal/" target="_blank">
+        Link
+      </a>
+    </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/knight-traversal" target="_blank">
+        Link
+      </a>
+    </p>
     <img src="../knightTraversal.gif" alt="" />
   </div>
 );
@@ -33,6 +45,18 @@ const battleship = (
       Made with: <a>HTML, CSS, JavaScript</a> and a little bit of <a>Jest</a>{" "}
       for testing.
     </p>
+    <p>
+      Try it out:{" "}
+      <a href="https://bqnic.github.io/battleship/" target="_blank">
+        Link
+      </a>
+    </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/battleship" target="_blank">
+        Link
+      </a>
+    </p>
     <img src="../battleship.gif" alt="" />
   </div>
 );
@@ -46,6 +70,18 @@ const cvBuilder = (
     </p>
     <p>
       Made with: <a>React, CSS</a>.
+    </p>
+    <p>
+      Try it out:{" "}
+      <a href="https://cv-application-pi.vercel.app/" target="_blank">
+        Link
+      </a>
+    </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/cv-application" target="_blank">
+        Link
+      </a>
     </p>
     <img src="../cvBuilder.png" alt="" />
   </div>
@@ -66,6 +102,12 @@ const schedulerGUI = (
     <p>
       Made with: <a>Java (JavaFX and SceneBuilder)</a>.
     </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/SchedulerGUI" target="_blank">
+        Link
+      </a>
+    </p>
     <img src="../someTasks.png" alt="" />
   </div>
 );
@@ -83,6 +125,18 @@ const todoList = (
     <p>
       Made with: <a>HTML, CSS, JavaScript</a>.
     </p>
+    <p>
+      Try it out:{" "}
+      <a href="https://bqnic.github.io/todo-list/" target="_blank">
+        Link
+      </a>
+    </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/todo-list" target="_blank">
+        Link
+      </a>
+    </p>
     <img src="../todo.png" alt="" />
   </div>
 );
@@ -97,6 +151,18 @@ const weatherApp = (
     <p>I made this project to use and understand using API.</p>
     <p>
       Made with: <a>HTML, CSS, JavaScript</a>.
+    </p>
+    <p>
+      Try it out:{" "}
+      <a href="https://bqnic.github.io/weather-app/" target="_blank">
+        Link
+      </a>
+    </p>
+    <p>
+      Code:{" "}
+      <a href="https://github.com/Bqnic/weather-app" target="_blank">
+        Link
+      </a>
     </p>
     <img src="../weather.png" alt="" />
   </div>

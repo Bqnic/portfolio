@@ -39,6 +39,18 @@ export default function About() {
           <p>Java</p>
         </div>
         <div>
+          <img src="../icons8-react.svg" alt="React" />
+          <p>React</p>
+        </div>
+        <div>
+          <img src="../icons8-vite.svg" alt="Vite" />
+          <p>Vite</p>
+        </div>
+        <div>
+          <img src="../icons8-webpack.svg" alt="Webpack" />
+          <p>Webpack</p>
+        </div>
+        <div>
           <img src="../icons8-git.svg" alt="GIT" />
           <p>Git</p>
         </div>
