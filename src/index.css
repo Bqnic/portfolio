@@ -327,15 +327,6 @@ body {
   transition: 0.8s;
 }
 
-@media screen and (max-width: 1200px) {
-  html {
-    overflow-x: hidden;
-  }
-  body {
-    overflow-x: hidden;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .introduction {
     font-size: 2.2rem;
