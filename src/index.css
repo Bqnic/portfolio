@@ -202,9 +202,10 @@ body {
   align-items: center;
   gap: 10px;
 }
-.project-slider div p:first-child {
-  font-size: 1.8rem;
+.project-slider .wrapper h1 {
+  font-size: 1.4rem;
   color: var(--highlight);
+  margin-bottom: 20px;
 }
 .project-slider div a {
   color: var(--bg-color3);
@@ -498,8 +499,9 @@ body {
   .project-slider div {
     gap: 10px;
   }
-  .project-slider div p:first-child {
-    font-size: 2.2rem;
+  .project-slider .wrapper h1:first-child {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
   }
   .projects .btns button {
     height: 40px;
@@ -507,6 +509,20 @@ body {
   }
   .projects .btns button:hover {
     font-size: 1.6rem;
+  }
+  .project-slider .wrapper div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .project-slider .wrapper div .paras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
   }
 
   .contact-info {
