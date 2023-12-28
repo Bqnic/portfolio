@@ -12,8 +12,8 @@ export default function Projects() {
 
   return (
     <>
-      <div className="section">Projects</div>
       <div className="projects">
+        <div className="section">Projects</div>
         <p>
           I started making projects involving programming in my
           <a> junior year </a>
