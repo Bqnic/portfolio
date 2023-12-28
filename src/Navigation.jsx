@@ -11,7 +11,7 @@ export default function Navigation() {
         to="about"
         spy={true}
         smooth={true}
-        offset={-80}
+        offset={-250}
       >
         About
       </Link>
@@ -20,7 +20,7 @@ export default function Navigation() {
         to="projects"
         spy={true}
         smooth={true}
-        offset={-80}
+        offset={-250}
       >
         Projects
       </Link>
@@ -29,7 +29,7 @@ export default function Navigation() {
         to="contact"
         spy={true}
         smooth={true}
-        offset={-80}
+        offset={-250}
       >
         Contact
       </Link>

@@ -12,8 +12,8 @@ export default function Projects() {
 
   return (
     <>
+      <div className="section">Projects</div>
       <div className="projects">
-        <div className="section">Projects</div>
         <p>
           I started making projects involving programming in my
           <a> junior year </a>
@@ -28,27 +28,31 @@ export default function Projects() {
           <a> projects</a>, such as:
         </p>
         <div className="project-slider">{projectArray[projects]}</div>
-        <div
-          className="slider"
-          style={{ gridTemplateColumns: `repeat(${numOfProjects}, 1fr` }}
-        >
-          {projectDivs}
-        </div>
-        <div className="btns">
-          <button
-            onClick={() =>
-              setProjects(projects == 0 ? numOfProjects : projects - 1)
-            }
+        <div className="slider_btns">
+          <div className="btns">
+            <button
+              onClick={() =>
+                setProjects(projects == 0 ? numOfProjects : projects - 1)
+              }
+            >
+              <img src="icons8-arrow-left-50.png" alt="-&lt;" />
+            </button>
+          </div>
+          <div
+            className="slider"
+            style={{ gridTemplateColumns: `repeat(${numOfProjects}, 1fr` }}
           >
-            &lt;-
-          </button>
-          <button
-            onClick={() =>
-              setProjects(projects == numOfProjects ? 0 : projects + 1)
-            }
-          >
-            -&gt;
-          </button>
+            {projectDivs}
+          </div>
+          <div className="btns">
+            <button
+              onClick={() =>
+                setProjects(projects == numOfProjects ? 0 : projects + 1)
+              }
+            >
+              <img src="icons8-arrow-right-50.png" alt="-&gt;" />
+            </button>
+          </div>
         </div>
       </div>
     </>

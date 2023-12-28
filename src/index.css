@@ -192,7 +192,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  height: 75vh;
+  height: 600px;
   width: 100%;
 }
 .project-slider div {
@@ -219,30 +219,35 @@ body {
   align-items: center;
 }
 .projects .btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
+  height: 30px;
+  padding: 10px;
   background: none;
-  border: 1px solid var(--bg-color3);
-  border-radius: 12px;
+  border: none;
   color: var(--highlight);
-  font-size: 1.5rem;
-  transition: 0.5s;
+  transition: 0.2s;
   cursor: pointer;
 }
 .projects .btns button:hover {
-  background-color: var(--highlight2);
-  border: 1px solid var(--highlight2);
+  border-bottom: 1px solid var(--bg-color3);
   width: 90px;
-  font-size: 1.5rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .projects .slider {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   height: 20px;
-  width: 50vw;
+  width: 35vw;
   align-self: center;
   border: 1px solid var(--bg-color3);
   border-radius: 20px;
+}
+.slider_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .projects .slider div {
   background-color: var(--bg-color);
@@ -350,7 +355,7 @@ body {
   .navigation .nav-btn {
     padding: 10px;
     width: 90px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   .navigation .nav-btn:hover {
     width: 100px;
@@ -381,6 +386,9 @@ body {
   .project-slider img {
     width: 500px;
   }
+  .project-slider {
+    height: 700px;
+  }
 
   .contact-info {
     margin-top: 50px;
@@ -400,7 +408,7 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   html {
     display: flex;
     justify-content: center;
@@ -408,5 +416,113 @@ body {
   }
   body {
     max-width: 1200px;
+  }
+
+  .introduction {
+    font-size: 2.8rem;
+  }
+  .introduction div:nth-child(1) p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .introduction div:nth-child(2) p:nth-child(1) {
+    font-size: 1.8rem;
+  }
+  .introduction .btn,
+  .footer .btn {
+    font-size: 1.4rem;
+    width: 200px;
+  }
+  .introduction .btn:hover,
+  .footer .btn:hover {
+    width: 220px;
+    transition: 0.5s;
+  }
+
+  .contact p,
+  .projects,
+  .footer,
+  .contact,
+  .about {
+    font-size: 1.4rem;
+  }
+
+  .navigation {
+    gap: 60px;
+    padding: 30px;
+  }
+  .navigation .nav-btn {
+    padding: 10px;
+    width: 90px;
+    font-size: 1.25rem;
+  }
+  .navigation .nav-btn:hover {
+    width: 100px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .about .paras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    font-size: 1.2rem;
+  }
+  .skills div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-slider img {
+    width: 570px;
+  }
+  .projects {
+    gap: 20px;
+  }
+  .project-slider {
+    height: 800px;
+  }
+  .project-slider div {
+    gap: 10px;
+  }
+  .project-slider div p:first-child {
+    font-size: 2.2rem;
+  }
+  .projects .btns button {
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .projects .btns button:hover {
+    font-size: 1.6rem;
+  }
+
+  .contact-info {
+    margin-top: 60px;
+  }
+  .contact-info a img {
+    height: 110px;
+    width: 110px;
+  }
+  .contact-info a img:hover {
+    margin-left: 40px;
+  }
+  .contact-info a p {
+    font-size: 1.55rem;
+  }
+  .contact-info a p:hover {
+    font-size: 1.65rem;
   }
 }
