@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <>
+    <div className="aboutWrapper">
       <div className="section">About</div>
       <div className="about">
         <div className="paras">
@@ -59,6 +59,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -29,7 +29,7 @@ body {
   color: var(--text-color);
 }
 
-.about,
+.aboutWrapper,
 .projects,
 .contact {
   margin: 80px 45px;
