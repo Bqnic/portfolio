@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <>
+      <div className="section">About</div>
       <div className="about">
-        <div className="section">About</div>
         <div className="paras">
           <p>
             I am a <a>20</a> year old CS student from <a>Croatia</a>.
