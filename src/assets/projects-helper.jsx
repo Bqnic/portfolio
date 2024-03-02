@@ -101,6 +101,67 @@ const cvBuilder = (
   </div>
 );
 
+const memoryCard = (
+  <div className="wrapper">
+    <h1>Memory Card</h1>
+    <div>
+      <div className="paras">
+        <p>
+          In this project I solidified my knowledge of <a>React</a> and using{" "}
+          <a>API</a>
+        </p>
+        <p>
+          Made with: <a>React, CSS</a>.
+        </p>
+        <p>
+          Try it out:{" "}
+          <a href="https://memory-card-sepia-xi.vercel.app/" target="_blank">
+            Link
+          </a>
+        </p>
+        <p>
+          Code:{" "}
+          <a href="https://github.com/Bqnic/memory-card" target="_blank">
+            Link
+          </a>
+        </p>
+      </div>
+      <img src="../memory.gif" alt="" />
+    </div>
+  </div>
+);
+
+const mockShoppingCart = (
+  <div className="wrapper">
+    <h1>Mock Shopping Cart</h1>
+    <div>
+      <div className="paras">
+        <p>
+          I used this project to learn <a>TypeScript</a> and <a>TailWindCSS</a>.
+          It's a classical shopping page where you can add and remove items from
+          cart.
+        </p>
+        <p>
+          Made with: <a>TypeScript(React), TailWindCSS</a>.
+        </p>
+        <p>
+          Try it out:{" "}
+          <a href="https://mock-shopping-cart.vercel.app/" target="_blank">
+            Link
+          </a>
+        </p>
+        <p>
+          Code:{" "}
+          <a href="https://github.com/Bqnic/mock-shopping-cart" target="_blank">
+            Link
+          </a>
+        </p>
+      </div>
+      <img src="../mockgif.gif" alt="" />
+    </div>
+  </div>
+);
+
 const schedulerGUI = (
   <div className="wrapper">
     <h1>SchedulerGUI</h1>
@@ -198,6 +259,8 @@ projectArray.push(
   knightTraversal,
   battleship,
   cvBuilder,
+  memoryCard,
+  mockShoppingCart,
   schedulerGUI,
   todoList,
   weatherApp

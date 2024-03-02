@@ -4,7 +4,7 @@ import { projectArray } from "./assets/projects-helper";
 export default function Projects() {
   const [projects, setProjects] = useState(0);
   const projectDivs = [];
-  const numOfProjects = 5;
+  const numOfProjects = projectArray.length - 1;
 
   for (let i = 1; i <= numOfProjects; i++) {
     projectDivs.push(<div className={projects >= i ? "active" : null}></div>);
