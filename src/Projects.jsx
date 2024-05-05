@@ -10,6 +10,10 @@ export default function Projects() {
     projectDivs.push(<div className={projects >= i ? "active" : null}></div>);
   }
 
+  function loadProject(projectIndex) {
+    setProjects(projectIndex);
+  }
+
   return (
     <>
       <div className="projects">
@@ -32,7 +36,7 @@ export default function Projects() {
           <div className="btns">
             <button
               onClick={() =>
-                setProjects(projects == 0 ? numOfProjects : projects - 1)
+                loadProject(projects == 0 ? numOfProjects : projects - 1)
               }
             >
               <img src="icons8-arrow-left-50.png" alt="-&lt;" />
@@ -47,7 +51,7 @@ export default function Projects() {
           <div className="btns">
             <button
               onClick={() =>
-                setProjects(projects == numOfProjects ? 0 : projects + 1)
+                loadProject(projects == numOfProjects ? 0 : projects + 1)
               }
             >
               <img src="icons8-arrow-right-50.png" alt="-&gt;" />

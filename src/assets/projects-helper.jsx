@@ -1,4 +1,14 @@
 export const projectArray = [];
+export const imageArray = [
+  "../knightTraversal.gif",
+  "../battleship.gif",
+  "../cvBuilder.png",
+  "../memory.gif",
+  "../mockgif.gif",
+  "../someTasks.png",
+  "../todo.png",
+  "../weather.png",
+];
 
 const knightTraversal = (
   <div className="wrapper">
