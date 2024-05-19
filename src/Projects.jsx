@@ -7,7 +7,9 @@ export default function Projects() {
   const numOfProjects = projectArray.length - 1;
 
   for (let i = 1; i <= numOfProjects; i++) {
-    projectDivs.push(<div className={projects >= i ? "active" : null}></div>);
+    projectDivs.push(
+      <div key={i} className={projects >= i ? "active" : null}></div>
+    );
   }
 
   return (

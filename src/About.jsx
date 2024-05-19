@@ -34,6 +34,10 @@ export default function About() {
             <p>JavaScript</p>
           </div>
           <div>
+            <img src="../icons8-typescript.svg" alt="TypeScript" />
+            <p>TypeScript</p>
+          </div>
+          <div>
             <img src="../icons8-c.svg" alt="C++" />
             <p>C++</p>
           </div>
@@ -46,16 +50,16 @@ export default function About() {
             <p>React</p>
           </div>
           <div>
-            <img src="../icons8-vite.svg" alt="Vite" />
-            <p>Vite</p>
-          </div>
-          <div>
-            <img src="../icons8-webpack.svg" alt="Webpack" />
-            <p>Webpack</p>
+            <img src="../icons8-python.svg" alt="Python" />
+            <p>Python</p>
           </div>
           <div>
             <img src="../icons8-git.svg" alt="GIT" />
             <p>Git</p>
+          </div>
+          <div>
+            <img src="../icons8-vite.svg" alt="Vite" />
+            <p>Vite</p>
           </div>
         </div>
       </div>
