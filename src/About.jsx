@@ -1,11 +1,13 @@
 export default function About() {
+  const myAge = Math.floor((new Date() - new Date("2003-12-26").getTime()) / 3.15576e+10);
+
   return (
     <div className="aboutWrapper">
       <div className="section">About</div>
       <div className="about">
         <div className="paras">
           <p>
-            I am a <a>20</a> year old CS student from <a>Croatia</a>.
+            I am a <a>{myAge}</a> year old CS student from <a>Croatia</a>.
           </p>
           <p>
             Currently a second year in university <a>FER</a> (Fakultet
